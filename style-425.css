@@ -1,0 +1,53 @@
+@media (max-width:425px) {
+    
+    #div-1{
+        margin-top: 30px;
+    }
+
+    #youtube-wrap{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #thumbnail-div{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    #yt-details-div{
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    #yt-title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    #yt-description{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #yt-bt-div{
+        margin-top: 30px;
+    }
+
+    #yt-head{
+        width: 80%;
+        font-size: 12px;
+        margin-bottom: -10px;
+    }
+
+    #div-2{
+        flex-direction: column;
+        padding: 50px 5% 50px 5%;
+    }
+
+    #tweet-wrap, #social-wrap{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
