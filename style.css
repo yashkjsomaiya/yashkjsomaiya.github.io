@@ -48,6 +48,8 @@
 }
 
 body{
+    width: 100%;
+    overflow-x: hidden;
     font-family: "Sofia Pro";
     display: flex;
     flex-direction: column;
@@ -71,6 +73,7 @@ header{
 }
 
 #div-1{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,6 +92,7 @@ header{
     padding: 20px;
     border-radius: 10px;
     color: var(--color-3);
+    z-index: 10;
 }
 
 #thumbnail-div{
@@ -140,7 +144,7 @@ header{
     flex-direction: row;
     width: 70%;
     margin-bottom: -14px;
-    z-index: 2;
+    z-index: 1000;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -159,11 +163,15 @@ header{
     flex-direction: row;
     width: 100%;
     padding: 50px 10% 50px 10%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
-#tweet-wrap, #social-wrap{
-    width: 48%;
+#tweet-wrap, #social-wrap, #bio-wrap{
+    width: 100%;
     height: max-content;
 }
 
@@ -186,6 +194,7 @@ header{
     color: var(--color-7);
     color: var(--white);
     font-weight: 300;
+    font-size: 14px;
 }
 
 #twt-name{
@@ -203,6 +212,7 @@ header{
     background: var(--color-1);
     padding: 20px;
     color: var(--color-3);
+    margin-top: 50px;
 }
 
 #soc-snap{
@@ -216,8 +226,10 @@ header{
     padding: 10px;
     background: var(--color-6);
     width: max-content;
+    width: 100%;
+    text-align: center;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     box-shadow: 0px 5px 0px var(--color-6-1);
     font-weight: 500;
     color: var(--white);
@@ -254,4 +266,76 @@ header{
 .soc-button:active, .soc-button:focus{
     box-shadow: none;
     translate: 0px 5px;
+}
+
+
+#bio-wrap{
+    position: relative;
+    background: var(--color-5-1);
+    background: #afaffc;
+    border-radius: 15px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+#bio-img-div{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#bio-img{
+    width: 100%;
+    border-radius: 0px;
+    filter:saturate(0.9) hue-rotate(40deg);
+    position: inherit;
+    z-index: 10;
+    padding-top: 10px;
+}
+
+#bio-img-text{
+    font-size: 100px;
+    font-weight: 800;
+    font-family: "Recoleta";
+    color: var(--white);
+    padding-bottom: 60px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+#bio-text-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bio-info{
+    padding: 25px;
+    font-size: 18px;
+    color: var(--color-5-1);
+    font-weight: 500;
+}
+
+#read-more-div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 200px;
+    background: linear-gradient(360deg, var(--color-4) 40%, rgba(0,0,0,0) 100%);
+    cursor: pointer;
+}
+
+#read-more{
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: var(--color-5-1);
 }

@@ -1,0 +1,18 @@
+@media (max-width:425px){
+
+    body{
+        font-size: 16px;
+        width: 100%;
+        overflow-x: hidden !important;
+        padding: 50px 20px 50px 20px;
+    }
+
+
+    .grid-div{
+        overflow-x: scroll;
+    }
+
+    table{
+        font-size: 16px;
+    }
+}

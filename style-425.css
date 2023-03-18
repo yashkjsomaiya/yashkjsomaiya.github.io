@@ -1,5 +1,5 @@
 @media (max-width:425px) {
-    
+
     #div-1{
         margin-top: 30px;
     }
@@ -42,12 +42,27 @@
     }
 
     #div-2{
-        flex-direction: column;
         padding: 50px 5% 50px 5%;
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
-    #tweet-wrap, #social-wrap{
+    #tweet-wrap, #social-wrap, #bio-wrap{
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
+
+    #social-wrap{
+        margin-top: 0;
+    }
+
+    #tweet-wrap > #tweet-text{
+        font-size: 15px;
+    }
+
+    #bio-img-text{
+        padding-bottom: 30px;
+        font-size: 60px;
+    }
+    
 }
