@@ -1,12 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
-     -khtml-user-select: none; 
        -moz-user-select: none; 
         -ms-user-select: none; 
             user-select: none; 
@@ -101,12 +108,19 @@ td{
 
 img{
     width: 50%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 .p-img-div{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .p-img-div > p{
@@ -119,6 +133,8 @@ img{
     font-family: sans-serif;
     padding: 5px 20px;
     background: #403298;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     border-radius: 5px;
     cursor: pointer;
