@@ -15,12 +15,6 @@
     --white: white;
     --black: black;
 
-    /* --color-1: #27104e;
-    --color-2: #64379f;
-    --color-3: #9854cb;
-    --color-4: #ddacf5;
-    --color-5: #75e8e7; */
-
     --color-1: #1e154e;
     --color-2: #150f37;
     --color-3: #d8d0ff;
@@ -85,7 +79,6 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
     width: 80% ;
     overflow: hidden;
     background: var(--color-2);
@@ -145,8 +138,6 @@ header{
     width: 70%;
     margin-bottom: -14px;
     z-index: 1000;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 #yt-head-1{
@@ -163,7 +154,6 @@ header{
     flex-direction: row;
     width: 100%;
     padding: 50px 10% 50px 10%;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr;
