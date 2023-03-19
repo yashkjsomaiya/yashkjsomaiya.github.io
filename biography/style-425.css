@@ -15,4 +15,17 @@
     table{
         font-size: 16px;
     }
+
+    .p-img-div{
+        flex-direction: column;
+    }
+
+    .p-img-div > img{
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .p-img-div > p{
+        padding: 0;
+    }
 }

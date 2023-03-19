@@ -45,9 +45,9 @@
     --color-14-1: #817e00;
     --color-15: #1773EA;
     --color-15-1: #10458b;
-    --color-16: #17161F;
-    --color-16: #1a1a1a;
-    --color-17: #222222;
+    --color-16: #100b29;
+    --color-17: #160f3a;
+    --color-18: #1e1351;
 }
 
 body{
@@ -55,9 +55,6 @@ body{
     overflow-x: hidden;
     font-family: "Lora";
     font-weight: 100;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     min-height: 100vh;
     background: var(--color-16);
     color: var(--white);
@@ -100,9 +97,35 @@ th{
     text-align: center;
     font-weight: 600;
     padding: 5px 10px;
+    background: var(--color-18);
 }
 
 td{
     padding: 5px 10px;
     
+}
+
+img{
+    width: 50%;
+    align-self: center;
+}
+
+.p-img-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.p-img-div > p{
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.back-to-main{
+    font-family: sans-serif;
+    padding: 5px 20px;
+    background: #403298;
+    max-width: max-content;
+    border-radius: 5px;
+    cursor: pointer;
 }
