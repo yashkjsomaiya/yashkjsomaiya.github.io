@@ -1,5 +1,23 @@
 document.body.onload = function(){
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const resp = urlParams.get('resp');
+
+    if(resp == "suc"){
+        document.getElementById("message").style.display = "flex";
+        document.getElementsByClassName("suc")[0].style.display = "flex";
+        setTimeout(function(){
+            document.getElementById("message").style.display = "none";
+        },1500);
+    }else if(resp == "fail"){
+        document.getElementById("message").style.display = "flex";
+        document.getElementsByClassName("fail")[0].style.display = "flex";
+        setTimeout(function(){
+            document.getElementById("message").style.display = "none";
+        },1500);
+    }
+
+
         const link = `https://api.countapi.xyz/hit/nazz/views`
         let p = fetch(link)
         p.then(resp => {return resp.json()}).then(val => {

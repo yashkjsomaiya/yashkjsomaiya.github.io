@@ -410,6 +410,7 @@ header{
 }
 
 #div-3{
+    margin-top: 30px;
     width: 100%;
     min-height: 100px;
     display: -webkit-box;
@@ -438,11 +439,11 @@ header{
 #div-3 > form{
     width: 80%;
     background: var(--color-1);
-    padding: 30px;
+    padding: 50px 40px;
     border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -458,7 +459,7 @@ header{
 #div-3 > form > input{
     font-family: "Sofia Pro", sans-serif;
     outline: none;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     font-size: 15px;
     background: var(--color-5-1);
@@ -494,4 +495,40 @@ header{
     cursor: pointer;
     white-space: nowrap;
     font-size: 15px;
+}
+
+#message{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+}
+
+.m-m{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.suc{
+    background: var(--color-11);
+    display: none;
+}
+
+.fail{
+    background: var(--color-6);
+    display: none;
 }
