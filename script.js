@@ -25,7 +25,7 @@ document.body.onload = function(){
         });
 
     const links = [
-        "https://openinapp.co/5tjau",
+        "https://openinapp.co/b34gk",
         "/biography",
         "https://open.spotify.com/artist/7iEUKVcv42PUcIS696yadB?si=BwI1MjuqSD64ioaesjrT7g&dl_branch=1&nd=1",
         "https://www.instagram.com/nazzmusic/?hl=en",
